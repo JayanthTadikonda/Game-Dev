@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function formSubmit() {
+    document.forms["myForm"].submit();
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" method="get">
+Inst name: <input type="text" name="Instname"><br>
+Password : <input type="password" name="pass"><br><br>
+<input type="button" onclick="formSubmit()" value="Send form data!">
+</form>
+
+<p>Notice that the JavaScript in the head section uses the name of the form to specify which form to submit.</p>
+
+</body>
+</html>
